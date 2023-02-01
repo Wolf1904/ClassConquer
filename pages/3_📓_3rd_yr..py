@@ -17,204 +17,204 @@ local_css("style/style1.css")
 # Using object notation
 choice = st.sidebar.selectbox(
     "Choose Subject:",
-    ("DS", "COA", "DSTL", "Maths IV", "Python", "Technical Communication", "Digital Electronics", "Human Values", "CSS", "Microprocessor", "Operating Systems", "Automata", "Sensor Instrumentation", "Electronics Engg.")
+    ("DBMS","Machine Learning","Soft Computing","Compiler Design","Data Analytics","software Engineering","Web Technology")
 )
 
-if choice == "DS":
-    img_DSA = Image.open("images/ds.jpg")
+if choice == "DBMS":
+    img_DBMS = Image.open("images/Database-Management-System.jpg")
 
     left_column, right_column = st.columns((2, 1))
     with right_column:
-        st.image(img_DSA)
+        st.image(img_DBMS)
     with left_column:
-        st.header("Data Structure")
-        st.subheader("Subject code: KCS301")
+        st.header("DataBase Management System")
+        st.subheader("Subject code: RCS501")
 
     st.write("---")
-    st.subheader("Studocu:")
+    st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
-        webbrowser.open('https://www.studocu.com/in/course/dr-apj-abdul-kalam-technical-university/data-structure/4904876')
+        webbrowser.open('link...')
 
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
         webbrowser.open('link...')
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
         webbrowser.open('link...')
 
-elif choice == "COA":
-    img_COA = Image.open("images/OIP.jpg")
+elif choice == "Machine Learning":
+    img_ML= Image.open("images/machine learning.jpg")
 
     left_column, right_column = st.columns((2, 1))
     with right_column:
-        st.image(img_COA)
+        st.image(img_ML)
     with left_column:
-        st.header("Computer Organization and Architecture")
-        st.subheader("Subject code: KCS301")
+        st.header("Machine Learning")
+        st.subheader("Subject code: KCS055 ")
         
     st.write("---")
-    st.subheader("source:")
+    st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
         webbrowser.open('link...')
 
-elif choice == "DSTL":
-    img_COA = Image.open("images/Dstl.jpg")
+elif choice == "Soft Computing":
+    img_Cs = Image.open("images/soft computing.jpg")
 
     left_column, right_column = st.columns((2, 1))
     with right_column:
-        st.image(img_COA)
+        st.image(img_Cs)
     with left_column:
-        st.header("Data Structure")
-        st.subheader("Subject code: KCS301")
+        st.header("Soft computing")
+        st.subheader("Subject code: KCS056")
         
     st.write("---")
-    st.subheader("source:")
+    st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
         webbrowser.open('link...')
 
-elif choice == "Maths IV":
+elif choice == "Compiler Design":
     img_COA = Image.open("images/maths.jpg")
 
     left_column, right_column = st.columns((2, 1))
     with right_column:
         st.image(img_COA)
     with left_column:
-        st.header("Data Structure")
-        st.subheader("Subject code: KCS301")
+        st.header("Compiler Design")
+        st.subheader("Subject code: KCS502")
         
     st.write("---")
-    st.subheader("source:")
+    st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
         webbrowser.open('link...')
 
-elif choice == "Python":
-    img_COA = Image.open("images/py.png")
+elif choice == "Data Analytics":
+    img_data_a = Image.open("images/data analytics.jpg")
 
     left_column, right_column = st.columns((2, 1))
     with right_column:
-        st.image(img_COA)
+        st.image(img_data_a)
     with left_column:
-        st.header("Data Structure")
-        st.subheader("Subject code: KCS301")
+        st.header("Data Analytics")
+        st.subheader("Subject code: KCS051")
         
     st.write("---")
-    st.subheader("source:")
+    st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
         webbrowser.open('link...')

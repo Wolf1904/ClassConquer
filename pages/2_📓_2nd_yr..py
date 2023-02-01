@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 import webbrowser
+from streamlit.components.v1 import html
 
 
 # ---PAGE_TITLE---
@@ -18,6 +19,10 @@ local_CSS("style/style1.css")
 choice = st.sidebar.selectbox(
     "Choose Subject:",
     ("DS", "COA", "DSTL", "Maths IV", "Python", "Technical Communication", "Digital Electronics", "Human Values", "Computer System Security", "Microprocessor", "Operating Systems", "Automata", "Sensor Instrumentation", "Electronics Engg.")
+)
+choicePyq = st.sidebar.selectbox(
+    "Choose Subject For Pyq:",
+    ("1st semester","2nd semester","3rd semester","4th semester","5th semester","6th semester","7th semester","8th semester")
 )
 
 if choice == "DS":
@@ -47,18 +52,7 @@ if choice == "DS":
     link = st.button('*Click here...*', key = "3")
     if link:
         webbrowser.open('https://drive.google.com/file/d/1fVMePwWWZFtTTAEDExnXX6p-AfTbRtyo/view')
-    st.write("###")
-    st.subheader("source:")
-    link = st.button('*Click here...*', key = "4")
-    if link:
-        webbrowser.open('link...')
-    
-    st.write("###")
-    st.subheader("source:")
-    link = st.button('*Click here...*', key = "5")
-    if link:
-        webbrowser.open('link...')
-
+        
 elif choice == "COA":
     img_COA = Image.open("images/coa.jpg")
 
@@ -69,32 +63,32 @@ elif choice == "COA":
         st.header("Computer Organization and Architecture")
         st.subheader("Subject code: KCS302")
         
-    st.write("---")
-    st.subheader("source:")
+    st.write("###")
+    st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
         webbrowser.open('link...')
@@ -110,31 +104,31 @@ elif choice == "DSTL":
         st.subheader("Subject code: KCS303")
         
     st.write("---")
-    st.subheader("source:")
+    st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
         webbrowser.open('link...')
@@ -150,31 +144,31 @@ elif choice == "Maths IV":
         st.subheader("Subject code: KAS302")
         
     st.write("---")
-    st.subheader("source:")
+    st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
         webbrowser.open('link...')
@@ -190,31 +184,31 @@ elif choice == "Python":
         st.subheader("Subject code: KNC302")
         
     st.write("---")
-    st.subheader("source:")
+    st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
         webbrowser.open('link...')
@@ -230,31 +224,31 @@ elif choice == "Technical Communication":
         st.subheader("Subject code: KAS301")
         
     st.write("---")
-    st.subheader("source:")
+    st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
         webbrowser.open('link...')
@@ -270,31 +264,31 @@ elif choice == "Digital Electronics":
         st.subheader("Subject code: KOE039/039H")
         
     st.write("---")
-    st.subheader("source:")
+    st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
         webbrowser.open('link...')
@@ -310,31 +304,31 @@ elif choice == "Human Values":
         st.subheader("Subject code: KVE301")
         
     st.write("---")
-    st.subheader("source:")
+    st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
         webbrowser.open('link...')
@@ -350,31 +344,31 @@ elif choice == "Computer System Security":
         st.subheader("Subject code: KNC301")
         
     st.write("---")
-    st.subheader("source:")
+    st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
         webbrowser.open('link...')
@@ -390,31 +384,31 @@ elif choice == "Microprocessor":
         st.subheader("Subject code: KCS403")
         
     st.write("---")
-    st.subheader("source:")
+    st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
         webbrowser.open('link...')
@@ -430,31 +424,31 @@ elif choice == "Operating Systems":
         st.subheader("Subject code: KCS401")
         
     st.write("---")
-    st.subheader("source:")
+    st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
         webbrowser.open('link...')
@@ -470,31 +464,31 @@ elif choice == "Automata":
         st.subheader("Subject code: KCS402")
         
     st.write("---")
-    st.subheader("source:")
+    st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
         webbrowser.open('link...')
@@ -510,31 +504,31 @@ elif choice == "Sensor Instrumentation":
         st.subheader("Subject code: KOE034/034H")
         
     st.write("---")
-    st.subheader("source:")
+    st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
         webbrowser.open('link...')
@@ -550,31 +544,151 @@ elif choice == "Electronics Engg.":
         st.subheader("Subject code: KOE038/038H")
         
     st.write("---")
-    st.subheader("source:")
+    st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
         webbrowser.open('link...')
     
     st.write("###")
-    st.subheader("source:")
+    st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
         webbrowser.open('link...')
+
+
+# ................................................................................
+
+
+
+
+# if choicePyq == "1st semester":
+#     pureButton = '''<style>
+#     a{
+#         text-decoration: none;
+#         color: white;
+#         border: 2px solid rgb(170, 199, 199);
+#         border-radius: 2px;
+#         padding: 3px 6px 3px 6px;
+#         background-color: black;
+#     }
+# </style>
+#     <a href='https://drive.google.com/drive/folders/1Ya_3tHGTwUz_XbUxUU4Qim1Ww-0Nck5I?usp=sharing' target='_blank'>Submit</a>
+# '''
+#     html(pureButton)
+# elif choicePyq == "2nd semester":
+#     pureButton = '''<style>
+#     a{
+#         text-decoration: none;
+#         color: white;
+#         border: 2px solid rgb(170, 199, 199);
+#         border-radius: 2px;
+#         padding: 3px 6px 3px 6px;
+#         background-color: black;
+#     }
+# </style>
+#     <a href='https://drive.google.com/drive/folders/18tm0pZsLSycC3ojvIO6FXjWvF4I7FNmb?usp=sharing' target='_blank'>Submit</a>
+# '''
+#     html(pureButton)
+# elif choicePyq == "3rd semester":
+#     pureButton = '''<style>
+#     a{
+#         text-decoration: none;
+#         color: white;
+#         border: 2px solid rgb(170, 199, 199);
+#         border-radius: 2px;
+#         padding: 3px 6px 3px 6px;
+#         background-color: black;
+#     }
+# </style>
+#     <a href='https://drive.google.com/drive/folders/1eMMpqlhUx9msLavZfssmfKjXsGBEfeu9?usp=sharing' target='_blank'>Submit</a>
+# '''
+#     html(pureButton)
+# elif choicePyq == "4th semester":
+#     pureButton = '''<style>
+#     a{
+#         text-decoration: none;
+#         color: white;
+#         border: 2px solid rgb(170, 199, 199);
+#         border-radius: 2px;
+#         padding: 3px 6px 3px 6px;
+#         background-color: black;
+#     }
+# </style>
+#     <a href='https://drive.google.com/drive/folders/19-Rj6yaFuCxzMKl8Ig9gQMRYfVsJqwJn?usp=sharing' target='_blank'>Submit</a>
+# '''
+#     html(pureButton)
+# elif choicePyq == "5th semester":
+#     pureButton = '''<style>
+#     a{
+#         text-decoration: none;
+#         color: white;
+#         border: 2px solid rgb(170, 199, 199);
+#         border-radius: 2px;
+#         padding: 3px 6px 3px 6px;
+#         background-color: black;
+#     }
+# </style>
+#     <a href='http://www.google.com' target='_blank'>Submit</a>
+# '''
+#     html(pureButton)
+# elif choicePyq == "6th semester":
+#     pureButton = '''<style>
+#     a{
+#         text-decoration: none;
+#         color: white;
+#         border: 2px solid rgb(170, 199, 199);
+#         border-radius: 2px;
+#         padding: 3px 6px 3px 6px;
+#         background-color: black;
+#     }
+# </style>
+#     <a href='http://www.google.com' target='_blank'>Submit</a>
+# '''
+#     html(pureButton)
+# elif choicePyq == "7th semester":
+#     pureButton = '''<style>
+#     a{
+#         text-decoration: none;
+#         color: white;
+#         border: 2px solid rgb(170, 199, 199);
+#         border-radius: 2px;
+#         padding: 3px 6px 3px 6px;
+#         background-color: black;
+#     }
+# </style>
+#     <a href='http://www.google.com' target='_blank'>Submit</a>
+# '''
+#     html(pureButton)
+# elif choicePyq == "8th semester":
+#     pureButton = '''<style>
+#     a{
+#         text-decoration: none;
+#         color: white;
+#         border: 2px solid rgb(170, 199, 199);
+#         border-radius: 2px;
+#         padding: 3px 6px 3px 6px;
+#         background-color: black;
+#     }
+# </style>
+#     <a href='http://www.google.com' target='_blank'>Click For 8th semester</a>
+# '''
+#     html(pureButton)
+    
