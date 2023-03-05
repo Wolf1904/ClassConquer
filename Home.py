@@ -59,7 +59,7 @@ with  st.container():
         st.write(
             '''
             - It help the students to integrate the technology into the curriculum, by increasing the technology literacy.
-            - This LMS offers a variety of resources that can help you earn good knowledge, regardless of the subject or level you’re pursuing. .
+            - This E-Learning Portal offers a variety of resources that can help you earn good knowledge, regardless of the subject or level you’re pursuing. .
             ''')
     with left_column:
         st_lottie(lottie_ebooks, height=300, key="ebooks") #---ANIMATION---
