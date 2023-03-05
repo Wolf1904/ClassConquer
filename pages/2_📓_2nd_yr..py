@@ -18,12 +18,12 @@ local_CSS("style/style1.css")
 # Using object notation
 choice = st.sidebar.selectbox(
     "Choose Subject:",
-    ("DS", "COA", "DSTL", "Maths IV", "Python", "Technical Communication", "Digital Electronics", "Human Values", "Computer System Security", "Microprocessor", "Operating Systems", "Automata", "Sensor Instrumentation", "Electronics Engg.")
+    ("Maths IV", "COA", "DSTL", "DS", "Python", "Technical Communication", "Digital Electronics", "Human Values", "Computer System Security", "Microprocessor", "Operating Systems", "Automata", "Sensor Instrumentation", "Electronics Engg."),
 )
-choicePyq = st.sidebar.selectbox(
-    "Choose Subject For Pyq:",
-    ("1st semester","2nd semester","3rd semester","4th semester","5th semester","6th semester","7th semester","8th semester")
-)
+# choicePyq = st.sidebar.selectbox(
+#     "Choose Subject For Pyq:",
+#     ("1st semester","2nd semester","3rd semester","4th semester","5th semester","6th semester","7th semester","8th semester")
+# )
 
 if choice == "DS":
     img_DSA = Image.open("images/ds.jpg")
@@ -67,13 +67,13 @@ elif choice == "COA":
     st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1oMPcRA9qX0tiDW7mC2c2NXBPbLsZkhby/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/17esR_MQ9Ncee8f-s7Wc9yKxQlIMO7nvN/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 3:")
@@ -85,7 +85,7 @@ elif choice == "COA":
     st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1v19mRn92XaNBrPYKuPKkbdy5q8jbML5p/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 5:")
@@ -100,38 +100,38 @@ elif choice == "DSTL":
     with right_column:
         st.image(img_COA)
     with left_column:
-        st.header("Data Structure and Theory of Logic")
+        st.header("Discrete Structure and Theory of Logic")
         st.subheader("Subject code: KCS303")
         
-    st.write("---")
+    st.write("###")
     st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('.......')
     
     st.write("###")
     st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('......')
     
     st.write("###")
     st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('.........')
     
     st.write("###")
     st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('.........')
     
     st.write("###")
     st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('...........')
 
 elif choice == "Maths IV":
     img_COA = Image.open("images/maths.jpg")
@@ -143,35 +143,35 @@ elif choice == "Maths IV":
         st.header("Engg. Mathematics IV")
         st.subheader("Subject code: KAS302")
         
-    st.write("---")
+    st.write("###")
     st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1GyhumryUmNcVWXj3DkjikWjwrzWO0sd5/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1wJKGmMOVU-GtDQGSqRNZd8TMKV3nVo76/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/11K96YGCzF0NI5jFQ4o0FyMXzP1o6xbU0/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1nHT-bNEvflbkRfgc-q3VQGxRHnU99ZoB/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1nHT-bNEvflbkRfgc-q3VQGxRHnU99ZoB/view?usp=share_link')
 
 elif choice == "Python":
     img_COA = Image.open("images/py.png")
@@ -187,7 +187,7 @@ elif choice == "Python":
     st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1wgDNqJYNckyUetP9no82YiLjX-kuSKMb/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 2:")
@@ -227,31 +227,31 @@ elif choice == "Technical Communication":
     st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1lqXVpK8E-2Q9_MoPDERmTxMNtLAcFrtT/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1lqXVpK8E-2Q9_MoPDERmTxMNtLAcFrtT/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1lqXVpK8E-2Q9_MoPDERmTxMNtLAcFrtT/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1lqXVpK8E-2Q9_MoPDERmTxMNtLAcFrtT/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1lqXVpK8E-2Q9_MoPDERmTxMNtLAcFrtT/view?usp=share_link')
 
 elif choice == "Digital Electronics":
     img_COA = Image.open("images/de.jpg")
@@ -307,31 +307,31 @@ elif choice == "Human Values":
     st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1LmJWlucbZZLSss1sJDOd9YYudCjn7-ql/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1LmJWlucbZZLSss1sJDOd9YYudCjn7-ql/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1LmJWlucbZZLSss1sJDOd9YYudCjn7-ql/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1LmJWlucbZZLSss1sJDOd9YYudCjn7-ql/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1LmJWlucbZZLSss1sJDOd9YYudCjn7-ql/view?usp=share_link')
 
 elif choice == "Computer System Security":
     img_COA = Image.open("images/R.jpg")

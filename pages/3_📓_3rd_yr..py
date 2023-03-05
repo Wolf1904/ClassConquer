@@ -34,30 +34,30 @@ if choice == "DBMS":
     st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/11o3esp4v-vPJ-5qxhGjp9ccnvk7yBcuo/view?usp=share_link')
 
     st.write("###")
     st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/11o3esp4v-vPJ-5qxhGjp9ccnvk7yBcuo/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/11o3esp4v-vPJ-5qxhGjp9ccnvk7yBcuo/view?usp=share_link')
     st.write("###")
     st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/11o3esp4v-vPJ-5qxhGjp9ccnvk7yBcuo/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/11o3esp4v-vPJ-5qxhGjp9ccnvk7yBcuo/view?usp=share_link')
 
 elif choice == "Machine Learning":
     img_ML= Image.open("images/machine learning.jpg")
@@ -73,13 +73,13 @@ elif choice == "Machine Learning":
     st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1_8CFf-lcV260-IvsGKAl8JSb-ACto1lK/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('')
     
     st.write("###")
     st.subheader("Unit 3:")
@@ -137,7 +137,7 @@ elif choice == "Soft Computing":
     st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1agIGRgo8aJrKWqNVPRdtOXjjtoOaGw2A/view?usp=share_link')
 
 elif choice == "Compiler Design":
     img_COA = Image.open("images/maths.jpg")
@@ -193,31 +193,31 @@ elif choice == "Data Analytics":
     st.subheader("Unit 1:")
     link = st.button('*Click here...*', key = "1")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1vrM46WgBjCqKRm4YXi4k8fibZi978Sbs/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 2:")
     link = st.button('*Click here...*', key = "2")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1vrM46WgBjCqKRm4YXi4k8fibZi978Sbs/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 3:")
     link = st.button('*Click here...*', key = "3")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1W8FG5C2SqLH2lXuXI-xbdgh0sf6XQ8s8/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 4:")
     link = st.button('*Click here...*', key = "4")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1W8FG5C2SqLH2lXuXI-xbdgh0sf6XQ8s8/view?usp=share_link')
     
     st.write("###")
     st.subheader("Unit 5:")
     link = st.button('*Click here...*', key = "5")
     if link:
-        webbrowser.open('link...')
+        webbrowser.open('https://drive.google.com/file/d/1Lra7EWsoCx5nLissGH3ztZQ93vvFP017/view?usp=share_link')
 
 elif choice == "Technical Communication":
     img_COA = Image.open("images/TC.jpg")

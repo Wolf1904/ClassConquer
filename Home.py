@@ -22,7 +22,7 @@ import webbrowser
 
 
 # ---PAGE_TITLE---
-st.set_page_config(page_title="eLibrary", page_icon=":books:", layout="wide")
+st.set_page_config(page_title="E-Learning Portal", page_icon=":books:", layout="wide")
 
 # st.sidebar.title("Main Menu")
 
@@ -49,8 +49,8 @@ with  st.container():
                 '''
                 "If we can put a man on the moon and sequence the human genome, we should be able to devise something close to a universal digital public library." — Peter Singer
                 ''')
-    st.title('Welcome to LMS')
-    st.write("Learning Management System")
+    st.title('Welcome to the Project')
+    st.header("E-Learning Portal")
     st.write('###')
 
     left_column, right_column = st.columns(2)
@@ -59,7 +59,7 @@ with  st.container():
         st.write(
             '''
             - It help the students to integrate the technology into the curriculum, by increasing the technology literacy.
-            - This e-library offers a variety of resources that can help you earn your degree, regardless of the subject or level you’re pursuing. This is through providing an environment conducive to learning, helpful librarians, and a variety of reference materials.
+            - This LMS offers a variety of resources that can help you earn good knowledge, regardless of the subject or level you’re pursuing. .
             ''')
     with left_column:
         st_lottie(lottie_ebooks, height=300, key="ebooks") #---ANIMATION---
@@ -77,7 +77,7 @@ add_selectbox = st.sidebar.selectbox(
 
 
 if add_selectbox == "Semester 1":
-        webbrowser.open('www.google.com')
+        webbrowser.open('https://drive.google.com/drive/folders/1Ya_3tHGTwUz_XbUxUU4Qim1Ww-0Nck5I?usp=share_link')
 if add_selectbox == "Semester 2":
         webbrowser.open('https://drive.google.com/drive/folders/18tm0pZsLSycC3ojvIO6FXjWvF4I7FNmb?usp=sharing')
 if add_selectbox == "Semester 3":
@@ -115,28 +115,80 @@ with st.container():
     st.write(
         '''
         You will find in this site:
-        - The eNotes of all subjects which are taught in 2nd and 3rd year
+        - The eNotes of all subjects which are taught in 2nd and 3rd year during B.Tech Program
         - Notes from different colleges affilated to AKTU
         '''
     )
 
-# ---- CONTACT ----
-with st.container():
-    st.write("---")
-    st.header("Get In Touch With Us!")
-    st.write("##")
+# # ---- CONTACT ----
+# with st.container():
+#     st.write("---")
+#     st.header("Get In Touch With Us!")
+#     st.write("##")
 
-    contact_form = """
-    <form action="https://formsubmit.co/el/xicoje" method="POST">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Your email" required>
-        <textarea name="message" placeholder="Your message here" required></textarea>
-        <button type="submit">Send</button>
-    </form>
-    """
-    left_column, right_column = st.columns(2)
-    with left_column:
-        st.markdown(contact_form, unsafe_allow_html=True)
-    with right_column:
-        st.empty()
+#     contact_form = """
+#     <form action="https://formsubmit.co/el/xicoje" method="POST">
+#         <input type="hidden" name="_captcha" value="false">
+#         <input type="text" name="name" placeholder="Your name" required>
+#         <input type="email" name="email" placeholder="Your email" required>
+#         <textarea name="message" placeholder="Your message here" required></textarea>
+#         <button type="submit">Send</button>
+#     </form>
+#     """
+#     left_column, right_column = st.columns(2)
+#     with left_column:
+#         st.markdown(contact_form, unsafe_allow_html=True)
+#     with right_column:
+#         st.empty()
+import numpy as np
+import pandas as pd
+
+import sqlite3
+conn = sqlite3.connect('student_feedback.db')
+c = conn.cursor()
+    
+
+def create_table():
+    c.execute('CREATE TABLE IF NOT EXISTS feedback(date_submitted DATE, Q1 TEXT, Q2 INTEGER, Q3 INTEGER, Q4 TEXT, Q5 TEXT, Q6 TEXT, Q7 TEXT, Q8 TEXT)')
+
+def add_feedback(date_submitted, Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8):
+    c.execute('INSERT INTO feedback (date_submitted,Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8) VALUES (?,?,?,?,?,?,?,?,?)',(date_submitted,Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8))
+    conn.commit()
+
+def main():
+    st.write("---")
+    st.write("*The Study Material Provided Is Not Ours And Belongs To Respective Owners.")
+    st.write("---")
+
+    st.title("Student Feedback")
+
+    d = st.date_input("Today's date",None, None, None, None)
+    
+    question_1 = st.selectbox('What was your subject ?',('',"Maths IV", "COA", "DSTL", "DS", "Python", "Technical Communication", "Digital Electronics", "Human Values", "Computer System Security", "Microprocessor", "Operating Systems", "Automata", "Sensor Instrumentation", "Electronics Engg.","DBMS","Machine Learning","Soft Computing","Compiler Design","Data Analytics","software Engineering","Web Technology"))
+    st.write('You selected:', question_1)
+    
+    question_2 = st.slider('What semester are you in?', 1,8)
+    st.write('You selected:', question_2) 
+    
+    question_3 = st.slider('Overall, how happy are you with the Notes? (5 being very happy and 1 being very dissapointed)', 1,5,1)
+    st.write('You selected:', question_3)
+
+    question_4 = st.selectbox('Were the notes interactive?',('','Yes', 'No'))
+    st.write('You selected:', question_4)
+
+    question_5 = st.selectbox('Was the syllabus updated?',('','Yes', 'No'))
+    st.write('You selected:', question_5)
+
+    question_6 = st.selectbox('Are these notes worth sharing ?',('','Yes', 'No'))
+    st.write('You selected:', question_6)
+
+    question_7 = st.selectbox('Will you refer the same in future?',('','Yes', 'No'))
+    st.write('You selected:', question_7)
+
+    question_8 = st.text_input('What could have been better?', max_chars=50)
+
+    if st.button("Submit feedback"):
+        create_table()
+        add_feedback(d, question_1, question_2, question_3, question_4, question_5, question_6, question_7, question_8)
+        st.success("Feedback submitted")
+main()
